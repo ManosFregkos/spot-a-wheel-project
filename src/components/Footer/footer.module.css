@@ -10,21 +10,23 @@
 
 .phoneSvg {
   background-image: url(/src/assets/phone-call.png);
-  background-size: 25px 25px;
+  background-size: 40px 35px;
   background-repeat: no-repeat;
-  padding-left: 30px;
+  height: 40px;
+  padding-left: 43px;
 }
 .submitButton {
   background-color: gray;
   color: white;
   border: none;
+  height: 40px;
 }
 .customCol {
   position: relative;
 }
 .message {
   position: absolute;
-  top: -60px;
+  top: 45px;
   left: 0;
   right: 0;
   text-align: center;
