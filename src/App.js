@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Button } from "react-bootstrap";
+import CenteredModal from "./components/Modal/CenteredModal";
+import "./App.css";
 
 function App() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      {modalShow ? (
+        <CenteredModal show={modalShow} onHide={() => setModalShow(false)} />
+      ) : (
+        <Button
+          className="btn"
+          variant="primary"
+          onClick={() => setModalShow(true)}
         >
-          Learn React
-        </a>
-      </header>
+          Click to Calculate your Loan
+        </Button>
+      )}
     </div>
   );
 }

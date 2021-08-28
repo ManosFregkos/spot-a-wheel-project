@@ -1,0 +1,49 @@
+.footerContainer {
+  color: white;
+  width: 100%;
+  background-color: royalblue;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.phoneSvg {
+  background-image: url(/src/assets/phone-call.png);
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+.submitButton {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+.customCol {
+  position: relative;
+}
+.message {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  font-weight: 700;
+}
+.success {
+  background-color: green;
+  color: white;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .message {
+    top: 40px;
+  }
+}

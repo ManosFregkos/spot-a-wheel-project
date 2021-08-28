@@ -1,0 +1,25 @@
+.modalContainer {
+  text-align: center;
+  height: 635px;
+  width: 800px;
+  box-shadow: -10px 10px 20px 0 rgba(220, 220, 220, 0.5);
+  border: solid 1px black;
+}
+.closeSvg {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.svg {
+  width: 35px;
+}
+.svg:hover {
+  box-shadow: -10px 10px 20px 0 rgba(220, 220, 220, 0.5);
+}
+
+@media (max-width: 576px) {
+  .modalContainer {
+    width: 100%;
+  }
+}

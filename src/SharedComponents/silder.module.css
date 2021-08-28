@@ -1,0 +1,41 @@
+.range {
+  /* -webkit-appearance: none; */
+  outline: none;
+  /* background: purple; */
+  height: 12px;
+  width: 400px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .range::-webkit-range-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: red;
+} */
+
+/* FIREFOX */
+.range::-moz-range-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: lightblue;
+  cursor: pointer;
+}
+
+.range::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: lightblue;
+  border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  .range {
+    width: 100%;
+  }
+}
