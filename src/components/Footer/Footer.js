@@ -23,21 +23,23 @@ function Footer() {
     <div className={classes.footerContainer}>
       <Row className="align-items-center">
         <Col className="text-align-left" xl={6} lg={6} md={6} sm={6}>
-          Συμπλήρωσε εδω το τηλέφωνο σου. Θα σε καλέσουμε άμεσα.
+          Συμπλήρωσε εδω το τηλέφωνο σου. <br /> Θα σε καλέσουμε άμεσα.
         </Col>
 
         <Col className={classes.customCol} xl={6} lg={6} md={6} sm={6}>
-          <input
-            className={classes.phoneSvg}
-            type="tel"
-            placeholder="Αριθμος τηλεφωνου"
-            value={phoneNumber}
-            onChange={handleOnChangeNumber}
-            maxLength={10}
-          />
-          <button className={classes.submitButton} onClick={checkPhoneNumber}>
-            Καλέστε
-          </button>
+          <div className="d-flex">
+            <input
+              className={classes.phoneSvg}
+              type="tel"
+              placeholder="Αριθμος τηλεφωνου"
+              value={phoneNumber}
+              onChange={handleOnChangeNumber}
+              maxLength={10}
+            />
+            <button className={classes.submitButton} onClick={checkPhoneNumber}>
+              Καλέστε
+            </button>
+          </div>
           <div className={classes.message} style={{ position: "absolute" }}>
             {isSubmitted && (
               <div>

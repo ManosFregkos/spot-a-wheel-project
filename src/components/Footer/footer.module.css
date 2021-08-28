@@ -27,10 +27,11 @@
 .message {
   position: absolute;
   top: 45px;
-  left: 0;
+  left: 8px;
   right: 0;
   text-align: center;
   color: black;
+  width: 100%;
 }
 
 .error {
